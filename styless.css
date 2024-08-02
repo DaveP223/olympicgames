@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('https://media.nbcchicago.com/2023/05/230523-paris-olympics-getty.jpg?quality=85&strip=all&resize=850%2C478'); /* Replace with the actual URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1, header nav {
+    position: relative;
+    z-index: 2;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adds dark overlay for better text readability */
+    z-index: 1;
+}
+
+header img {
+    max-width: 100px;
+    display: block;
+    margin: 0.5em auto;
+    position: relative;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
+}
+
+#news-updates {
+    margin-top: 1em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    header img {
+        max-width: 70px;
+    }
+}
