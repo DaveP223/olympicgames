@@ -1,1 +1,1 @@
-# olympicgames
+This project is a single-page website designed to showcase information about the Pairs Olympic Games. The website includes sections for medal rankings, sports schedules, and news updates related to the games. It is designed to be visually appealing, responsive, and interactive, providing a comprehensive user experience.
