@@ -17,8 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'News headline 2: The Paris 2024 Olympic Games continue to bring success for Team USA. Highlights from Day 7 include ShaCarri Richardsons impressive performance in Round 1 of the women's 100m and Ian Barrows and Hans Henkens calm and skillful display on the water, earning a bronze medal in sailing. Team USA gave fans plenty to cheer about.',
         
     ];
-
-    // Populate medal rankings
+   
     const medalTableBody = document.querySelector('#medal-rankings tbody');
     medalData.forEach((data) => {
         const row = document.createElement('tr');
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         medalTableBody.appendChild(row);
     });
 
-    // Populate news updates
     const newsContainer = document.getElementById('news-updates');
     newsUpdates.forEach((news) => {
         const newsItem = document.createElement('p');
