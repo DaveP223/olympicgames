@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     const newsUpdates = [
-        'News headline 1: Brazil secured their first victory of Paris 2024, defeating Japan with a final score of 102-84. The Brazilians showcased impressive shooting from beyond the arc, hitting 17 out of 28 three-pointers. Bruno Caboclo led the team with 33 points, shooting 13-19 from the field. For Japan, Kawamura Yuki and Josh Hawkinson combined for a total of 47 points.',
-        'News headline 2: The Paris 2024 Olympic Games continue to bring success for Team USA. Highlights from Day 7 include ShaCarri Richardsons impressive performance in Round 1 of the women's 100m and Ian Barrows and Hans Henkens calm and skillful display on the water, earning a bronze medal in sailing. Team USA gave fans plenty to cheer about.',
-        
+        'News headline 1: Details of the news...',
+        'News headline 2: Details of the news...',
+        // Add more mock news as needed
     ];
-   
+
+    // Populate medal rankings
     const medalTableBody = document.querySelector('#medal-rankings tbody');
     medalData.forEach((data) => {
         const row = document.createElement('tr');
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         medalTableBody.appendChild(row);
     });
 
+    // Populate news updates
     const newsContainer = document.getElementById('news-updates');
     newsUpdates.forEach((news) => {
         const newsItem = document.createElement('p');
