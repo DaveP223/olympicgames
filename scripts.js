@@ -12,21 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { country: 'Italy', gold: 10, silver: 10, bronze: 20 },
     ];
 
-    const sportsSchedules = {
-        sport1: 'Schedule for Sport 1...',
-        sport2: 'Schedule for Sport 2...',
-        sport3: 'Schedule for Sport 3...',
-        sport4: 'Schedule for Sport 4...',
-        sport5: 'Schedule for Sport 5...',
-    };
-
     const newsUpdates = [
         'News headline 1: Details of the news...',
         'News headline 2: Details of the news...',
-   
+        // Add more mock news as needed
     ];
 
-    //  medal rankings
+    // Populate medal rankings
     const medalTableBody = document.querySelector('#medal-rankings tbody');
     medalData.forEach((data) => {
         const row = document.createElement('tr');
@@ -39,17 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         medalTableBody.appendChild(row);
     });
 
-    //  sports schedules
-    const sportsList = document.querySelectorAll('#sports ul li a');
-    sportsList.forEach((link) => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            const sportId = link.getAttribute('href').substring(1);
-            alert(sportsSchedules[sportId]);
-        });
-    });
-
-    //  news updates
+    // Populate news updates
     const newsContainer = document.getElementById('news-updates');
     newsUpdates.forEach((news) => {
         const newsItem = document.createElement('p');
